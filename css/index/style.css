@@ -12,11 +12,71 @@
     padding: 0;
     margin: 0;
     font-family: 'Fira Sans';
+    text-rendering: optimizeLegibility;
+}
+
+.banner {
+    background-image: url(/assets/images/circuit.webp);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
 }
 
 body {
-    background-color: #1d2021;
+    background: #282828;
     color: #ebdbb2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    width: 1200px;
+}
+
+.welcome {
+    font-size: 5rem;
+    border-bottom: solid thick #ebdbb2;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    margin: 100px auto 100px auto;
+    flex-wrap: wrap;
+}
+.about-module {
+    text-align: right; 
+    width: 400px;
+}
+.module {
+    min-width: 200px;
+    line-height: 1.5;
+    background: #32302f;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px #1d2021;
+}
+
+.module h1 {
+    color: #83a598;
+    padding-bottom: 15px;
+}
+
+.skills {
+    justify-content: space-evenly;
+}
+
+.skills ul{
+    padding: 1px 0px 1px 15px;
 }
 
 .footer {
@@ -25,14 +85,15 @@ body {
     justify-content: space-evenly;
     align-items: top;
     padding: 25px;
-    flex-wrap: wrap;
     font-size: 1.3rem;
 }
 
-.socials, .site , .extras {
+.links, .site , .extras {
     display: flex;
     flex-direction: column;
     align-items: left;
+    min-width: 100px;
+    margin: 10px;
 }
 
 .footer-header {
@@ -44,11 +105,50 @@ body {
 .link {
     text-decoration: none;
     color: #000;
-    transition: color .1s;
+    transition: color .15s;
     padding: 2px 0px 2px 0px;
 }
 
 .link:hover {
     color: #504945;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    .banner {
+        min-height: 200px;
+        width: 100%;
+        background-attachment: scroll;
+    }
+
+    .welcome {
+        font-size: 12vw;
+    }
+
+    .module {
+        min-width: 250px;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .about-module {
+        width: 90%;
+        max-width: none;
+        text-align: left;
+        margin: 30px auto;
+    }
+    
+    .container {
+        width: 90%;
+    }
+    .section {
+        flex-direction: column;
+        margin: none;
+        width: 95%;
+    }
 }
