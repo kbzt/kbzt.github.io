@@ -1,0 +1,61 @@
+* {
+	text-rendering: optimizeLegibility;
+}
+
+.banner {
+	background-image: url(/assets/images/billy-huynh-W8KTS-mhFUE-unsplash.jpg);
+}
+
+.container {
+	width: 800px;
+}
+
+.info {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 2.5rem;
+	padding: 50px 10px 50px 10px;
+	text-align: center;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin: 40px auto;
+}
+
+.text-body {
+	font-size: 1.2rem;
+	line-height: 1.35;
+	color: #d5c4a1;
+}
+
+strong {
+	font-weight: 800;
+	color: #d65d0e;
+}
+
+.blog-link {
+	color: #b8bb26;
+	text-decoration: none;
+}
+
+.blog-link:hover {
+	text-decoration: underline 2px;
+	color: #b8bb26;
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+		width: 90%;
+	}
+
+	.text-body {
+		font-size: 1.2rem;
+	}
+}
