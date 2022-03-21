@@ -47,6 +47,13 @@ body {
     border-bottom: solid thick #ebdbb2;
 }
 
+.pic {
+    padding: 5px; 
+    width: 300px; 
+    border-radius: 50%; 
+    border: thick solid #83a598;
+}
+
 .section {
     display: flex;
     justify-content: space-evenly;
@@ -132,6 +139,10 @@ body {
 
     .welcome {
         font-size: 12vw;
+    }
+
+    .pic {
+        width: 250px;
     }
 
     .module {
